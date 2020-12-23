@@ -96,9 +96,11 @@ sudo service php7.3-fpm start
 `sudo service redis-server start` 启动 redis 
 
 
-Ubuntu 设置命令别名
+- Ubuntu 自定义短命令
 
 `sudo vim /home/YouUserName/.bashrc` 
+
+在末尾加上自定义的命令
 
 ```
 alias run-nginx='sudo service nginx'
@@ -120,3 +122,4 @@ alias lnmp-restart='run-nginx restart && run-php73 restart && run-php70 restart 
 alias lnmp-status='run-nginx status && run-php73 status && run-php70 status && run-mysql status && run-redis status'
 ```
 
+设置完过后需要重新打开 shell 工具
